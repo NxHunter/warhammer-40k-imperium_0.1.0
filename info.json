@@ -1,0 +1,12 @@
+{
+  "name": "warhammer-40k-imperium",
+  "version": "0.1.0",
+  "title": "Warhammer 40K: Imperium Arsenal",
+  "author": "YourName",
+  "factorio_version": "2.0",
+  "description": "Assemble Imperial weapons and technology to cleanse the cosmos of heretics and xenos filth. For the Emperor!",
+  "dependencies": ["base >= 2.0.0"],
+  "package": {
+    "ignore": ["*.md", "*.txt", "test/**"]
+  }
+}

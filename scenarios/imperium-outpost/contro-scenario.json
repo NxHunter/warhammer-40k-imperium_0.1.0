@@ -1,0 +1,44 @@
+{
+  "map_settings": {
+    "pollution": {
+      "enabled": true,
+      "diffusion_ratio": 0.1,
+      "min_to_diffuse": 15,
+      "ageing": 0.5,
+      "expected_max_per_chunk": 200,
+      "min_to_show_per_chunk": 35,
+      "min_pollution_to_damage_trees": 60,
+      "pollution_with_max_forest_damage": 150,
+      "pollution_restored_per_tree_damage": 10,
+      "pollution_per_tree_damage": 2,
+      "max_pollution_to_restore_trees": 20,
+      "enemy_attack_pollution_consumption_modifier": 1.5
+    },
+    "enemy_evolution": {
+      "enabled": true,
+      "time_factor": 0.000007,
+      "destroy_factor": 0.002,
+      "pollution_factor": 0.000015
+    },
+    "enemy_expansion": {
+      "enabled": true,
+      "max_expansion_distance": 7,
+      "friendly_base_influence_radius": 2,
+      "enemy_building_influence_radius": 2,
+      "building_coefficient": 0.1,
+      "other_base_coefficient": 2.0,
+      "neighbouring_chunk_coefficient": 0.5,
+      "neighbouring_base_chunk_coefficient": 0.4,
+      "max_colliding_tiles_coefficient": 0.9,
+      "settler_group_min_size": 5,
+      "settler_group_max_size": 15,
+      "min_expansion_cooldown": 14400,
+      "max_expansion_cooldown": 28800
+    }
+  },
+  "difficulty_settings": {
+    "recipe_difficulty": 0,
+    "technology_difficulty": 0,
+    "technology_price_multiplier": 1.0
+  }
+}

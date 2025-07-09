@@ -1,0 +1,8 @@
+{
+  "name": "imperium-outpost",
+  "version": "0.1.0",
+  "title": "Warhammer 40K: Imperium Outpost",
+  "author": "YourName",
+  "description": "Establish an Imperial manufacturing outpost on a frontier world. Build weapons for the Imperial Guard, research forbidden technology, and defend against xenos incursions. For the Emperor!",
+  "dependencies": ["warhammer-40k-imperium >= 0.1.0"]
+}
