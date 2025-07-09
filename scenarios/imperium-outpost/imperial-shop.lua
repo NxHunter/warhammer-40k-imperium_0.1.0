@@ -202,7 +202,7 @@ function add_sell_options(shop)
             title = "[SELL] " .. trade.amount .. "x " .. trade.item,
             description = "Receive: " .. trade.price .. " coins"
         })
-    }
+    end
     
     -- Special: Give player starting coins for selling their initial shovel
     shop.add_market_item({
@@ -211,6 +211,7 @@ function add_sell_options(shop)
         title = "[SPECIAL DEAL] Improvised Shovel",
         description = "Receive: 20 coins (Special bonus)"
     })
+end  -- ADDED MISSING CLOSING BRACE HERE
 
 -- Helper function to check tech level
 function get_player_tech_level(force)
