@@ -16,7 +16,7 @@ script.on_event(defines.events.on_player_created, function(event)
     end
 end)
 
--- Handle requisition token creation with flavor text
+-- Handle requisition token creation with flavor text and track total requisition tokens produced
 script.on_event(defines.events.on_player_crafted_item, function(event)
     local player = game.get_player(event.player_index)
     if not player then return end
@@ -44,14 +44,9 @@ script.on_event(defines.events.on_player_crafted_item, function(event)
         player.print("You have crafted a relic of the Dark Age of Technology. The Omnissiah is pleased.", 
                     {color = {r = 1.0, g = 0.0, b = 0.0}})
     end
-end)
-
--- Track total requisition tokens produced (for potential achievements)
-script.on_event(defines.events.on_player_crafted_item, function(event)
-    local player = game.get_player(event.player_index)
-    if not player then return end
     
-    if event.item_stack.name == "imperial-requisition-token" then
+    -- Track requisition token production
+    if item_name == "imperial-requisition-token" then
         if not global.requisition_totals then
             global.requisition_totals = {}
         end
